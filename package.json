@@ -15,6 +15,11 @@
 	},
 	"author": "Anton Petrov",
 	"name": "@framer/apetrov.backdrop-filter",
+	"description": "Displays an element that applies filters to the backdrop like those you can find on iOS or Windows.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aptrov/framerx-backdrop-filter.git"
+	},
 	"keywords": [
 		"backdrop",
 		"filter",
@@ -23,5 +28,5 @@
 		"effect",
 		"ios"
 	],
-	"version": "1.4.0"
+	"version": "1.5.0"
 }

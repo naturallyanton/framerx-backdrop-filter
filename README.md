@@ -1,10 +1,14 @@
-React component that generates a `div` element with controls for almost all `backdrop-filter` effects available as per specifications (check [MDN definition](https://developer.mozilla.org/es/docs/Web/CSS/backdrop-filter)).
+# Description
 
-This effect is useful to emulate iOS and Windows effects in your design prototypes (i.e. apply blur effect to everything in the background of a certain element).
+React component that generates a `div` element with controls for almost all `backdrop-filter` effects available as per specification (check [MDN definition](https://developer.mozilla.org/es/docs/Web/CSS/backdrop-filter)).
+
+You can easily apply filters to the backdrop (everything behind an element, including the background) like those you can find on iOS or Windows: blur, saturation, opacity, contrast, etc.
 
 Check table below for all properties manageable via this component.
 
-Works also in Safari, Edge and Chrome (might require additional flags). Check [compatibility table](https://caniuse.com/#search=backdrop-filter) in CanIUse.
+Tested externally on Safari, Edge and Chrome (instructions below). Check the [CanIUse support table](https://caniuse.com/#search=backdrop-filter) for more specific compatibility information.
+
+# Properties
 
 |        Property         |  Control   |  Type   |    Default    |
 | :---------------------: | :--------: | :-----: | :-----------: |
@@ -26,3 +30,10 @@ Works also in Safari, Edge and Chrome (might require additional flags). Check [c
 |     backgroundColor     | Background | string  | 'transparent' |
 
 You can find [the source code of this component on GitHub](https://github.com/aptrov/framerx-backdrop-filter).
+
+# Viewing on Google Chrome
+
+As of February 2019, `backdrop-filter` CSS property is not yet supported on Chrome out-of-the-box, but can be enabled via a flag.
+
+- In Chrome, go to `chrome://flags/#enable-experimental-web-platform-features`
+- Select the "Enable" option from the dropdown at the right hand side
