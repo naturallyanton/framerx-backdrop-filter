@@ -13,3 +13,6 @@ dist
 node_modules
 .npmrc
 *.framerxproj
+
+# Project sepcific
+design
