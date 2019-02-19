@@ -1,27 +1,32 @@
 {
-	"main": "dist/index.js",
-	"license": "MIT",
-	"devDependencies": {
-		"@types/react": "^16.4.16"
-	},
-	"peerDependencies": {
-		"framer": "^0.10",
-		"react": "^16.3.0",
-		"react-dom": "^16.3.0"
-	},
-	"framer": {
-		"id": "e32c0e02-2c4f-41fa-b5a6-ea1e380258ee",
-		"displayName": "Backdrop Filter"
-	},
-	"author": "Anton Petrov",
-	"name": "@framer/apetrov.backdrop-filter",
-	"keywords": [
-		"backdrop",
-		"filter",
-		"background",
-		"blur",
-		"effect",
-		"ios"
-	],
-	"version": "1.4.0"
+  "main": "dist/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.4.16"
+  },
+  "peerDependencies": {
+    "framer": "^0.10",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
+  "framer": {
+    "id": "e32c0e02-2c4f-41fa-b5a6-ea1e380258ee",
+    "displayName": "Backdrop Filter"
+  },
+  "author": "Anton Petrov",
+  "name": "@framer/apetrov.backdrop-filter",
+  "description": "Displays an element that applies filters to the backdrop like those you can find on iOS or Windows.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aptrov/framerx-backdrop-filter.git"
+  },
+  "keywords": [
+    "backdrop",
+    "filter",
+    "background",
+    "blur",
+    "effect",
+    "ios"
+  ],
+  "version": "1.4.0"
 }
