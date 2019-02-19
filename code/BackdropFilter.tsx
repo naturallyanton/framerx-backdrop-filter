@@ -17,6 +17,7 @@ type Props = {
   borderTopRightRadius: number;
   borderBottomRightRadius: number;
   borderBottomLeftRadius: number;
+  backgroundColor: string;
 };
 
 export class BackdropFilter extends React.Component<Props> {
@@ -42,6 +43,7 @@ export class BackdropFilter extends React.Component<Props> {
       borderTopRightRadius,
       borderBottomRightRadius,
       borderBottomLeftRadius,
+      backgroundColor,
     } = this.props;
     const backdropFilters = {
       WebkitBackdropFilter: `
@@ -67,6 +69,7 @@ export class BackdropFilter extends React.Component<Props> {
       borderRadius:
         (!borderRadiusPerSide && `${borderRadius}px`) ||
         `${borderTopLeftRadius}px ${borderTopRightRadius}px ${borderBottomRightRadius}px ${borderBottomLeftRadius}px`,
+      backgroundColor,
     };
 
     return <div style={{ ...this.style, ...backdropFilters }} />;
@@ -88,6 +91,7 @@ export class BackdropFilter extends React.Component<Props> {
     borderTopRightRadius: 0,
     borderBottomRightRadius: 0,
     borderBottomLeftRadius: 0,
+    backgroundColor: 'transparent',
   };
 
   static propertyControls: PropertyControls<Props> = {
@@ -114,5 +118,6 @@ export class BackdropFilter extends React.Component<Props> {
       min: 0,
       title: 'Radius',
     },
+    backgroundColor: { type: ControlType.Color, title: 'Background' },
   };
 }
