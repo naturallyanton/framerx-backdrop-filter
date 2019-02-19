@@ -96,14 +96,14 @@ export class BackdropFilter extends React.Component<Props> {
 
   static propertyControls: PropertyControls<Props> = {
     blur: { type: ControlType.Number, title: 'Blur' },
-    brightness: { type: ControlType.Number, title: 'Brightness' },
-    contrast: { type: ControlType.Number, title: 'Contrast' },
+    brightness: { type: ControlType.Number, title: 'Brightness', min: 0, max: 200 },
+    contrast: { type: ControlType.Number, title: 'Contrast', min: 0, max: 200 },
     grayscale: { type: ControlType.Number, title: 'Grayscale' },
     hueRotate: { type: ControlType.Number, title: 'Hue Rotate', min: 0, max: 360 },
     invert: { type: ControlType.Number, title: 'Invert' },
     opacity: { type: ControlType.Number, title: 'Opacity' },
     sepia: { type: ControlType.Number, title: 'Sepia' },
-    saturate: { type: ControlType.Number, title: 'Saturate' },
+    saturate: { type: ControlType.Number, title: 'Saturate', min: 0, max: 200 },
     borderRadius: {
       type: ControlType.FusedNumber,
       toggleKey: 'borderRadiusPerSide',
