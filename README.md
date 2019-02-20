@@ -33,7 +33,7 @@ You can find [the source code of this component on GitHub](https://github.com/ap
 
 # Viewing on Google Chrome
 
-As of February 2019, `backdrop-filter` CSS property is not yet supported on Chrome out-of-the-box, but can be enabled via a flag.
+Chrome doesn't support `backdrop-filter` CSS property out-of-the-box yet, but can be enabled via a flag.
 
 - In Chrome, go to `chrome://flags/#enable-experimental-web-platform-features`
 - Select the "Enable" option from the dropdown at the right hand side
